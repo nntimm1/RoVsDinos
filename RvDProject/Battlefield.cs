@@ -8,5 +8,19 @@ namespace RvDProject
 {
     public class Battlefield
     {
+        // Mamber Variables 
+
+        Dinosaur health = new Dinosaur("T-Rex");
+
+        // Constructor
+
+
+
+        // Member Methods
+
+        public void RobotsAttack()
+        {
+  
+        }
     }
 }

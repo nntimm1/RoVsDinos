@@ -21,8 +21,7 @@ namespace RvDProject
             this.dinoType = dinoType;
                        
         }
-      
-
+     
         //member methods (can do)
     }
 

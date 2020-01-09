@@ -9,8 +9,8 @@ namespace RvDProject
     public class Weapon
     {
         public int knifePower = -10;
-        public int flameThrowerPower = -15;
-        public int rockPower = -5;
+        public int flameThrowerPower = -10;
+        public int rockPower = -10;
 
         public int knifeAttack = -15;
         public int flameThrowerAttack = -20;
@@ -20,8 +20,8 @@ namespace RvDProject
         public int pterodactylEnergy = -10;
         public int brachiosaurusEnergy = -5;
 
-        public int trexAttack = -20;
-        public int pterodactylAttack = -15;
+        public int trexAttack = -10;
+        public int pterodactylAttack = -10;
         public int brachiosaurusAttack = -10;
 
 
