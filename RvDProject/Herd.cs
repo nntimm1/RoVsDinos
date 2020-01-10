@@ -15,11 +15,12 @@ namespace RvDProject
         public int teamAttack;
         public int teamHealth;
         public int teamEnergy;
+        public int teamUsedEnergy;
 
         // Fleet dAttackMode = new Fleet(); <- dont do this, use the parameter in the method, causes a error due to infinate loop. 
 
 
-               
+
         public Herd()
         {
             dinosaurs = new List<Dinosaur>();
@@ -29,6 +30,8 @@ namespace RvDProject
             teamAttack = -10;
             teamHealth = 100;
             teamEnergy = 100;
+            teamUsedEnergy = -5;
+
         }
 
         public void AddDinosaur(Dinosaur dinosaur)
@@ -43,9 +46,9 @@ namespace RvDProject
         public void DinoAttack(Fleet fleet) // <- perameter rather that adding to variables to avoid looping
         // remember to update the if else statement in the battlefield class with the parameter you create. 
         {
-            fleet.rTeamPower += teamAttack;
-            teamEnergy += teamAttack;
-            Console.WriteLine(" Robot Power Remaining: " + fleet.rTeamPower + "\n Dino Energy Remaining: " + teamEnergy);
+            fleet.rTeamHealth += teamAttack;
+            teamEnergy += teamUsedEnergy;
+            Console.WriteLine(" Robot Power Remaining: " + fleet.rTeamPower + " Robot Health Remaining: " + fleet.rTeamHealth + "\n Dino Energy Remaining: " + teamEnergy + " Dino Health Remaining: " + teamHealth);
             
         }
 

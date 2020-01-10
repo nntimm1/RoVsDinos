@@ -35,7 +35,7 @@ namespace RvDProject
             if (UserInput == "1") 
             {
                 herd.DinoAttack(fleet);
-                if (fleet.rTeamPower > 0)
+                if (fleet.rTeamHealth > 0)
                 {
                     GetAttckerSelectionFromUser();
                 }

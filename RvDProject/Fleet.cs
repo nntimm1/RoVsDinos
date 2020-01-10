@@ -30,7 +30,7 @@ namespace RvDProject
             knifeAttack = -10;
             flameThrowerAttack = -10;
             rockAttack = -10;
-            rTeamAttack = -15;
+            rTeamAttack = -10;
             rTeamPower = 100;
             rTeamHealth = 100;
         }
@@ -49,7 +49,7 @@ namespace RvDProject
         {
             herd.teamHealth += rTeamAttack;
             rTeamPower += rTeamAttack;
-            Console.WriteLine(" Dino Health Remaining: " + herd.teamHealth + "\n Robot Power remaining: "+ rTeamPower);
+            Console.WriteLine("Dino Energy Remaining: " +herd.teamEnergy + " Dino Health Remaining: " + herd.teamHealth + "\n Robot Power remaining: " + rTeamPower + " Robot Health Remaining: " + rTeamHealth);
             
         }
 
