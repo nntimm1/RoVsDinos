@@ -8,12 +8,21 @@ namespace RvDProject
 {
     public class Fleet
     {
+
+        // member variables ---------------------------------------
+
         public List<Robot> robots;
         public int knifeAttack;
         public int flameThrowerAttack;
         public int rockAttack;
         public int rTeamAttack;
         public int rTeamPower;
+        public int rTeamHealth;
+        
+
+        // Herd robotKillDino = new Herd();
+
+        // constructor -----------------------------------------------
 
         public Fleet()
         {
@@ -21,9 +30,11 @@ namespace RvDProject
             knifeAttack = -10;
             flameThrowerAttack = -10;
             rockAttack = -10;
-            rTeamAttack = -10;
+            rTeamAttack = -15;
             rTeamPower = 100;
-    }
+            rTeamHealth = 100;
+        }
+        // member methods --------------------------------------------
 
         public void AddRobot(Robot robot)
         {
@@ -34,11 +45,14 @@ namespace RvDProject
         {
             robots.Remove(robot);
         }
-        //public int RobotAttack()
-        //{
+        public void RobotAttack(Herd herd)
+        {
+            herd.teamHealth += rTeamAttack;
+            rTeamPower += rTeamAttack;
+            Console.WriteLine(" Dino Health Remaining: " + herd.teamHealth + "\n Robot Power remaining: "+ rTeamPower);
+            Console.ReadLine();
+        }
 
-        //}
 
-      
     }
 }

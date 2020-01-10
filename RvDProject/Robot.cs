@@ -13,6 +13,7 @@ namespace RvDProject
         public int healthR;
         public int pwrLevel;
         public string weapon;
+
         
 
         // constructor (spawner)

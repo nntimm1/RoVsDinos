@@ -14,8 +14,9 @@ namespace RvDProject
         public int brachiosaurusAttack;
         public int teamAttack;
         public int teamHealth;
+        public int teamEnergy;
 
-        Fleet dAttackMode = new Fleet();
+        // Fleet dAttackMode = new Fleet();
 
 
                
@@ -27,6 +28,7 @@ namespace RvDProject
             brachiosaurusAttack = -10;
             teamAttack = -10;
             teamHealth = 100;
+            teamEnergy = 100;
         }
 
         public void AddDinosaur(Dinosaur dinosaur)
@@ -38,17 +40,13 @@ namespace RvDProject
         {
             dinosaurs.Remove(dinosaur);
         }
-        public void DinoAttack()
+        public void DinoAttack(Fleet fleet)
         {
-            dAttackMode.rTeamPower += teamAttack;
-
-            Console.WriteLine(dAttackMode.rTeamPower);
+            fleet.rTeamPower += teamAttack;
+            teamEnergy += teamAttack;
+            Console.WriteLine(" Robot Power Remaining: " + fleet.rTeamPower + "\n Dino Energy Remaining: " + teamEnergy);
             Console.ReadLine();
-
         }
-
-
 
     }
 }
-/
