@@ -9,11 +9,21 @@ namespace RvDProject
     public class Fleet
     {
         public List<Robot> robots;
+        public int knifeAttack;
+        public int flameThrowerAttack;
+        public int rockAttack;
+        public int rTeamAttack;
+        public int rTeamPower;
 
         public Fleet()
         {
             robots = new List<Robot>();
-        }
+            knifeAttack = -10;
+            flameThrowerAttack = -10;
+            rockAttack = -10;
+            rTeamAttack = -10;
+            rTeamPower = 100;
+    }
 
         public void AddRobot(Robot robot)
         {
@@ -24,14 +34,11 @@ namespace RvDProject
         {
             robots.Remove(robot);
         }
-
-        //public void RoboAttack()
+        //public int RobotAttack()
         //{
-        //    int result;
-        //    result = Dinosaur.health -= attackPwr;
-        //    result1 = 
-        //    Console.WriteLine("Dinosaur Health " + result + "Robot Energy " + Robot.energy);
-        //    Console.ReadLine();
+
         //}
+
+      
     }
 }

@@ -27,6 +27,8 @@ namespace RvDProject
             Robot robot2 = new Robot("Knife", "Stu");
             fleet.AddRobot(robot2);
 
+            Battlefield NewGame = new Battlefield();
+            NewGame.RunGame();
 
             Console.WriteLine();
             Console.ReadLine();

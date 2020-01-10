@@ -10,33 +10,43 @@ namespace RvDProject
     {
         // Mamber Variables 
 
-       
+        int DinoAt;
+        int RoboAt;
+        Fleet fleet = new Fleet();
+        Herd herd = new Herd();
 
         // Constructor
         
-
+            
 
         // Member Methods
 
         public void RunGame()
         {
-            GetAttckerSelectionFromUser();
-            
-        }
-
-        public void DinoAttack()
-        {
-                
-        }
-
-        public void RoboAttack()
-        {
+            bool DinosAttack = GetAttckerSelectionFromUser();
+            herd.DinoAttack();
 
         }
 
-        public void GetAttckerSelectionFromUser()
+     
+        public bool GetAttckerSelectionFromUser()
         {
+            Console.WriteLine("Choose your attacker: \n1 Dinosaurs \n2 Robots");
+            string UserInput = Console.ReadLine();
 
+            if (UserInput == "1")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void FleetRoster()
+        {
+            Console.WriteLine(fleet.robots);
+            Console.ReadLine();
         }
     }
 }

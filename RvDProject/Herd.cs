@@ -9,11 +9,24 @@ namespace RvDProject
     public class Herd
     {
         public List<Dinosaur> dinosaurs;
-       
+        public int trexAttack;
+        public int pterodactylAttack;
+        public int brachiosaurusAttack;
+        public int teamAttack;
+        public int teamHealth;
 
+        Fleet dAttackMode = new Fleet();
+
+
+               
         public Herd()
         {
             dinosaurs = new List<Dinosaur>();
+            trexAttack = -10;
+            pterodactylAttack = -10;
+            brachiosaurusAttack = -10;
+            teamAttack = -10;
+            teamHealth = 100;
         }
 
         public void AddDinosaur(Dinosaur dinosaur)
@@ -25,14 +38,17 @@ namespace RvDProject
         {
             dinosaurs.Remove(dinosaur);
         }
+        public void DinoAttack()
+        {
+            dAttackMode.rTeamPower += teamAttack;
 
-        //public void DinoAttack()
-        //{
-        //    int result;
-        //    result = Fleet -= attackPwr;
-        //    Console.WriteLine("Robot Health " + health + "Dinosaur Energy " + dinosaurs.energy);
-        //    Console.ReadLine();
-        //}
-       
+            Console.WriteLine(dAttackMode.rTeamPower);
+            Console.ReadLine();
+
+        }
+
+
+
     }
 }
+/
