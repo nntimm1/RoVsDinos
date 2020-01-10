@@ -10,20 +10,23 @@ namespace RvDProject
     {
         // member variables (has a)
         public string rName;
-        public int health = 100;
-        public int pwrLevel = 100;
+        public int healthR;
+        public int pwrLevel;
         public string weapon;
-        public int attackPwr = 15;
-
+        
 
         // constructor (spawner)
         public Robot(string weapon, string rName)
         {
             this.weapon = weapon;
             this.rName = rName;
-
+            healthR = 100;
+            pwrLevel = 100;
         }
 
         //member methods (can do)
+
+
     }
+
 }

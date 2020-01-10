@@ -10,17 +10,33 @@ namespace RvDProject
     {
         // Mamber Variables 
 
-        Dinosaur health = new Dinosaur("T-Rex");
+       
 
         // Constructor
-
+        
 
 
         // Member Methods
 
-        public void RobotsAttack()
+        public void RunGame()
         {
-  
+            GetAttckerSelectionFromUser();
+            
+        }
+
+        public void DinoAttack()
+        {
+                
+        }
+
+        public void RoboAttack()
+        {
+
+        }
+
+        public void GetAttckerSelectionFromUser()
+        {
+
         }
     }
 }

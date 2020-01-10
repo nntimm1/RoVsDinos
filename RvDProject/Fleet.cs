@@ -8,7 +8,7 @@ namespace RvDProject
 {
     public class Fleet
     {
-        public List<Robot> robots; 
+        public List<Robot> robots;
 
         public Fleet()
         {
@@ -24,5 +24,14 @@ namespace RvDProject
         {
             robots.Remove(robot);
         }
+
+        //public void RoboAttack()
+        //{
+        //    int result;
+        //    result = Dinosaur.health -= attackPwr;
+        //    result1 = 
+        //    Console.WriteLine("Dinosaur Health " + result + "Robot Energy " + Robot.energy);
+        //    Console.ReadLine();
+        //}
     }
 }

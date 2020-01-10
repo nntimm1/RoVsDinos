@@ -10,8 +10,8 @@ namespace RvDProject
     {
         // member variables (has a)
         public string dinoType;
-        public int health = 100;
-        public int energy = 100;
+        public int healthD;
+        public int energy;
         
 
 
@@ -19,10 +19,13 @@ namespace RvDProject
         public Dinosaur(string dinoType)
         {
             this.dinoType = dinoType;
-                       
+            healthD = 100;
+            energy = 100;                      
         }
      
         //member methods (can do)
+
+
     }
 
 }
