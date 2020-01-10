@@ -35,10 +35,28 @@ namespace RvDProject
             if (UserInput == "1") 
             {
                 herd.DinoAttack(fleet);
+                if (fleet.rTeamPower > 0)
+                {
+                    GetAttckerSelectionFromUser();
+                }
+                else
+                {
+                    Console.WriteLine("Dinos Win! \n Game Over");
+                   
+                }
             }
             else
             {
                 fleet.RobotAttack(herd);
+                if (herd.teamHealth > 0)
+                {
+                    GetAttckerSelectionFromUser();
+                }
+                else
+                {
+                    Console.WriteLine("Robots Win! \n Game Over");
+                  
+                }
             }
             
         

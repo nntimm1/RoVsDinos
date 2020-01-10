@@ -50,7 +50,7 @@ namespace RvDProject
             herd.teamHealth += rTeamAttack;
             rTeamPower += rTeamAttack;
             Console.WriteLine(" Dino Health Remaining: " + herd.teamHealth + "\n Robot Power remaining: "+ rTeamPower);
-            Console.ReadLine();
+            
         }
 
 
